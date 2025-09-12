@@ -180,7 +180,7 @@ if (query == "" || query == undefined) {
       value.data.items.forEach((item) => {
         mainhtml += `
           <div name="${item.cacheId}">
-            <h2><a href="${item.formattedUrl}">${item.htmlTitle}</a></h2>
+            <h2><a href="${item.link}">${item.htmlTitle}</a></h2>
             <p>Von <a href="${item.displayLink}">${item.displayLink}</a></p>
             <p>${item.htmlSnippet}</p>
             <p><a href="${item.formattedUrl}">${item.htmlFormattedUrl}</a></p>
