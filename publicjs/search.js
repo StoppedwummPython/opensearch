@@ -12,5 +12,5 @@ async function getQueryVariable(variable) {
 
 getQueryVariable("q").then((val) => {
     console.log("Gotten")
-    document.getElementById("search-bar").value = val
+    document.getElementById("search-bar").value.replace("+", " ") = val
 })
